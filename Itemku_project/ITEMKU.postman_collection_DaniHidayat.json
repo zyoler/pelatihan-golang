@@ -1,0 +1,335 @@
+{
+	"info": {
+		"_postman_id": "6ac91d31-03af-47de-8e42-a93bd56ae13c",
+		"name": "ITEMKU",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    nama:\"dani\"\r\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/postmahasiswa",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"postmahasiswa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getdata-game",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/getdata-game",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getdata-game"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getdata-user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/getdata-user",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getdata-user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getdata-user/{id}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/getdata-user/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getdata-user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "postdata-user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nama\": \"Dani Hidayat\",\r\n    \"email\": \"dani@gmail.com\",\r\n    \"password\": \"12345\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/postdata-user",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"postdata-user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deletedata-user/{id}",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/deletedata-user/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"deletedata-user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updatedata-user/{id}",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nama\": \"Dani Hidayat\",\r\n    \"password\": \"12345\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/updatedata-user/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"updatedata-user",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getdata-toko",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/getdata-toko",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getdata-toko"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "postdata-toko",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id_user\": 2,\r\n    \"nama_toko\": \"Toko Bambang\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/postdata-toko",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"postdata-toko"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deletedata-toko/{id}",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/deletedata-toko/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"deletedata-toko",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updatedata-toko/{id}",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nama_toko\": \"Toko Ucup\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/updatedata-toko/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"updatedata-toko",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "postdata-tokodetail",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id_toko\": 1,\r\n    \"id_game\": 1,\r\n    \"jumlah_item\": 255,\r\n    \"harga_jual\": 100000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/postdata-tokodetail",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"postdata-tokodetail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deletedata-tokodetail/{id}",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/deletedata-tokodetail/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"deletedata-tokodetail",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getdata-tokodetail/{id}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/getdata-tokodetail/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getdata-tokodetail",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "notification",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/notifies",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"notifies"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
